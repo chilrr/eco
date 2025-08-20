@@ -1,5 +1,5 @@
 ---
-title: "Renewable Energy at Home"
+title: "币安注册"
 description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/energy.jpg"
 pubDate: 2024-02-15
