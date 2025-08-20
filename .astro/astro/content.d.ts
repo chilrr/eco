@@ -183,13 +183,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"paspport copy.md": {
-	id: "paspport copy.md";
-  slug: "paspport-copy";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "paspport.md": {
 	id: "paspport.md";
   slug: "paspport";
@@ -207,6 +200,13 @@ declare module 'astro:content' {
 "sustainable-living.md": {
 	id: "sustainable-living.md";
   slug: "sustainable-living";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"webwebweb.md": {
+	id: "webwebweb.md";
+  slug: "webwebweb";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
