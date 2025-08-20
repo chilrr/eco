@@ -4,6 +4,7 @@ description: "Simple steps towards a more sustainable lifestyle."
 image: "/images/sustainable.jpg"
 pubDate: 2024-01-01
 tags: ["lifestyle", "sustainability", "eco-friendly"]
+category: "其他"
 ---
 
 # Sustainable Living: A Guide to Eco-Friendly Choices

@@ -4,6 +4,7 @@ description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/binancecover.jpg"
 pubDate: 2025-08-01
 tags: ["energy", "home", "sustainability"]
+category: "交易所注册"
 ---
 
 # 币安注册1

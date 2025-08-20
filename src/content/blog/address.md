@@ -4,6 +4,7 @@ description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/fashion.jpg"
 pubDate: 2025-08-09
 tags: ["fashion", "sustainability", "lifestyle"]
+category: "身份证件"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

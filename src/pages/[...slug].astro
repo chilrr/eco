@@ -14,6 +14,19 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+// 按分类组织文章
+const postsByCategory = sortedPosts.reduce((acc, p) => {
+  const category = p.data.category || '其他';
+  if (!acc[category]) {
+    acc[category] = [];
+  }
+  acc[category].push(p);
+  return acc;
+}, {} as Record<string, typeof sortedPosts>);
+
+// 获取当前文章的分类
+const currentCategory = post.data.category || '其他';
 ---
 
 <Layout title={post.data.title}>
@@ -32,13 +45,26 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pu
       <div class="sidebar-content">
         <h3>实操手册</h3>
         <nav class="post-nav">
-          {sortedPosts.map(p => (
-            <a 
-              href={`/${p.slug}`} 
-              class={`nav-item ${p.slug === post.slug ? 'active' : ''}`}
-            >
-              <div class="nav-title">{p.data.title}</div>
-            </a>
+          {Object.entries(postsByCategory).map(([category, posts]) => (
+            <div class="category-group">
+              <div class={`category-header ${category === currentCategory ? 'expanded' : 'collapsed'}`}>
+                <svg class="category-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M4 2L8 6L4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="category-title">{category}</span>
+                <span class="category-count">({posts.length})</span>
+              </div>
+              <div class={`category-posts ${category === currentCategory ? 'expanded' : 'collapsed'}`}>
+                {posts.map(p => (
+                  <a 
+                    href={`/${p.slug}`} 
+                    class={`nav-item ${p.slug === post.slug ? 'active' : ''}`}
+                  >
+                    <div class="nav-title">{p.data.title}</div>
+                  </a>
+                ))}
+              </div>
+            </div>
           ))}
         </nav>
       </div>
@@ -163,7 +189,73 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pu
   .post-nav {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .category-group {
+    margin-bottom: 0.5rem;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #f0f0f0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+  .category-header:hover {
+    background: #e8e8e8;
+  }
+
+  .category-header.expanded {
+    background: var(--accent);
+    color: white;
+  }
+
+  .category-icon {
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .category-header.expanded .category-icon {
+    transform: rotate(90deg);
+  }
+
+  .category-title {
+    font-weight: 600;
+    font-size: 0.75rem;
+    flex: 1;
+  }
+
+  .category-count {
+    font-size: 0.7rem;
+    opacity: 0.8;
+  }
+
+  .category-posts {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
     gap: 0.25rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .category-posts.collapsed {
+    max-height: 0;
+    margin-top: 0;
+    opacity: 0;
+  }
+
+  .category-posts.expanded {
+    max-height: 1000px;
+    opacity: 1;
   }
 
   .nav-item {

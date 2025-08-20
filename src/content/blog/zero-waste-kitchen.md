@@ -4,6 +4,7 @@ description: "Transform your kitchen into a zero-waste zone with these practical
 image: "/images/kitchen.jpg"
 pubDate: 2024-01-15
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
+category: "其他"
 ---
 
 # Zero Waste Kitchen: A Practical Guide
