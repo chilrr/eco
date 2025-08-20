@@ -8,8 +8,7 @@ tags: ["energy", "home", "sustainability"]
 
 # 币安注册1
 
-Discover how to incorporate renewable energy solutions into your home.
-
+欢迎大家来到加密说明书，本篇内容为实操手册里的一部分，用于展示如何从零开始注册下载登陆币安。
 ## Key Areas
 
 1. Solar panel installation
