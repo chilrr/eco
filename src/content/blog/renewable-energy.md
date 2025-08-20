@@ -1,10 +1,10 @@
 ---
-title: "币安注册"
+title: "1. 交易所入门：币安注册完整指南"
 description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/binancecover.jpg"
 pubDate: 2025-08-01
 tags: ["energy", "home", "sustainability"]
-category: "交易所注册"
+category: "加密入门"
 ---
 
 # 币安注册1

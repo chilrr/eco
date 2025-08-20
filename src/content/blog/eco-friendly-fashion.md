@@ -1,10 +1,10 @@
 ---
-title: "Eco-Friendly Fashion"
+title: "1. 交易基础：现货交易入门指南"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/fashion.jpg"
 pubDate: 2024-02-01
 tags: ["fashion", "sustainability", "lifestyle"]
-category: "其他"
+category: "市场交易"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

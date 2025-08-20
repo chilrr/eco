@@ -1,10 +1,10 @@
 ---
-title: "如何正确访问使用互联网"
+title: "1. 网络基础：如何正确访问互联网"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/fashion.jpg"
 pubDate: 2025-08-08
 tags: ["fashion", "sustainability", "lifestyle"]
-category: "网络工具"
+category: "基础必备"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

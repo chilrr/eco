@@ -1,10 +1,10 @@
 ---
-title: "如何获取完整身份证件（护照、港澳通行证）"
+title: "3. 身份完善：获取护照与港澳通行证"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/fashion.jpg"
 pubDate: 2025-08-10
 tags: ["fashion", "sustainability", "lifestyle"]
-category: "身份证件"
+category: "基础必备"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

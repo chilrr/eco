@@ -155,6 +155,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"global-perspective.md": {
+	id: "global-perspective.md";
+  slug: "global-perspective";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "paspport.md": {
 	id: "paspport.md";
   slug: "paspport";
