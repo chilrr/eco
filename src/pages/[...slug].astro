@@ -12,23 +12,120 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 
 <Layout title={post.data.title}>
-  <article class="post">
-    <div class="image-container">
-      <img src={post.data.image} alt={post.data.title} />
-    </div>
-    <div class="content">
-      <Content />
-    </div>
-  </article>
+  <div class="post-layout">
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <h3>文章目录</h3>
+        <nav class="post-nav">
+          {sortedPosts.map(p => (
+            <a 
+              href={`/${p.slug}`} 
+              class={`nav-item ${p.slug === post.slug ? 'active' : ''}`}
+            >
+              <div class="nav-title">{p.data.title}</div>
+              <div class="nav-date">{p.data.pubDate.toLocaleDateString('zh-CN')}</div>
+            </a>
+          ))}
+        </nav>
+      </div>
+    </aside>
+    <article class="post">
+      <div class="image-container">
+        <img src={post.data.image} alt={post.data.title} />
+      </div>
+      <div class="content">
+        <Content />
+      </div>
+    </article>
+  </div>
 </Layout>
 
 <style>
+  .post-layout {
+    display: flex;
+    min-height: calc(100vh - 200px);
+  }
+
+  .sidebar {
+    width: 280px;
+    background: #fafafa;
+    border-right: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .sidebar-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .sidebar h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .post-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 0.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+
+  .nav-item:hover {
+    background: white;
+    border-color: #e0e0e0;
+    transform: translateX(2px);
+  }
+
+  .nav-item.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  .nav-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav-date {
+  }
+
+  .nav-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+  }
+
+  .nav-date {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
   .post {
-    max-width: 800px;
-    margin: 0 auto;
+    flex: 1;
+    max-width: none;
+    margin: 0;
     padding: 2rem;
   }
 
@@ -81,5 +178,33 @@ const { Content } = await post.render();
   .content :global(li) {
     margin-bottom: 0.5rem;
     color: var(--text-secondary);
+  }
+
+  @media (max-width: 1024px) {
+    .post-layout {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+    </div>
+    
+    .sidebar-content {
+      padding: 1rem;
+    }
+    
+    .post-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 0.5rem;
+    }
+    
+    .nav-item {
+      padding: 0.75rem;
+    </div>
   }
 </style>
