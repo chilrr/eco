@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"paspport copy copy copy.md": {
+	id: "paspport copy copy copy.md";
+  slug: "paspport-copy-copy-copy";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "paspport copy copy.md": {
 	id: "paspport copy copy.md";
   slug: "paspport-copy-copy";
