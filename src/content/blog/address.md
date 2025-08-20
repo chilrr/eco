@@ -2,7 +2,7 @@
 title: "如何获取个人地址证明"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/fashion.jpg"
-pubDate: 2025-07-30
+pubDate: 2025-08-09
 tags: ["fashion", "sustainability", "lifestyle"]
 ---
 
