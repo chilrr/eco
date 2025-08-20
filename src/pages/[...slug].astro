@@ -25,6 +25,14 @@ const postsByCategory = sortedPosts.reduce((acc, p) => {
   return acc;
 }, {} as Record<string, typeof sortedPosts>);
 
+// 定义分类顺序
+const categoryOrder = ['基础必备', '加密入门', '空投撸毛', '市场交易', '进阶安全', '全球视野', '其他'];
+
+// 按指定顺序排序分类
+const orderedCategories = categoryOrder
+  .filter(category => postsByCategory[category])
+  .map(category => [category, postsByCategory[category]] as [string, typeof sortedPosts]);
+
 // 获取当前文章的分类
 const currentCategory = post.data.category || '其他';
 ---
@@ -46,7 +54,7 @@ const currentCategory = post.data.category || '其他';
         <h3>实操手册</h3>
         <div class="learning-path">
         <nav class="post-nav">
-          {Object.entries(postsByCategory).map(([category, posts]) => (
+          {orderedCategories.map(([category, posts]) => (
             <div class="category-group">
               <div class={`category-header ${category === currentCategory ? 'expanded' : 'collapsed'}`} data-category={category}>
                 <svg class="category-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
