@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"adress.md": {
+	id: "adress.md";
+  slug: "adress";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "eco-friendly-fashion.md": {
 	id: "eco-friendly-fashion.md";
   slug: "eco-friendly-fashion";
@@ -172,13 +179,6 @@ declare module 'astro:content' {
 "paspport copy copy copy.md": {
 	id: "paspport copy copy copy.md";
   slug: "paspport-copy-copy-copy";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"paspport copy copy.md": {
-	id: "paspport copy copy.md";
-  slug: "paspport-copy-copy";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
