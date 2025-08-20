@@ -2,7 +2,7 @@
 title: "7. 长期保号：邮箱手机账号使用技巧"
 description: "Transform your kitchen into a zero-waste zone with these practical tips."
 image: "/images/kitchen.jpg"
-pubDate: 2024-01-13
+pubDate: 2024-01-12
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "基础必备"
 ---
