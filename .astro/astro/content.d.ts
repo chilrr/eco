@@ -190,6 +190,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"zero-waste-kitchen copy copy copy.md": {
+	id: "zero-waste-kitchen copy copy copy.md";
+  slug: "zero-waste-kitchen-copy-copy-copy";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "zero-waste-kitchen copy copy.md": {
 	id: "zero-waste-kitchen copy copy.md";
   slug: "zero-waste-kitchen-copy-copy";
