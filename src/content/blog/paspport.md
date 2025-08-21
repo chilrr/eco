@@ -1,5 +1,5 @@
 ---
-title: "1. 身份验证：获取护照与港澳通行证"
+title: "身份验证：获取护照与港澳通行证"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/passport.jpg"
 pubDate: 2025-08-10
