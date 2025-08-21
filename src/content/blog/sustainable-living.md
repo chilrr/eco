@@ -1,7 +1,7 @@
 ---
 title: "1. 钱包安全：冷钱包选择与使用"
 description: "Simple steps towards a more sustainable lifestyle."
-image: "/images/sustainable.jpg"
+image: "/images/wallet.jpg"
 pubDate: 2024-01-01
 tags: ["lifestyle", "sustainability", "eco-friendly"]
 category: "进阶安全"
