@@ -1,7 +1,7 @@
 ---
 title: "1. 必备证件：获取护照与港澳通行证"
 description: "Sustainable fashion choices for a greener wardrobe."
-image: "/images/fashion.jpg"
+image: "/images/passport.jpg"
 pubDate: 2025-08-10
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "基础必备"
