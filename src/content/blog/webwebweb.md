@@ -1,7 +1,7 @@
 ---
 title: "3. 网络基础：如何正确访问互联网"
 description: "Sustainable fashion choices for a greener wardrobe."
-image: "/images/fashion.jpg"
+image: "/images/webweb.jpg"
 pubDate: 2025-08-08
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "基础必备"
