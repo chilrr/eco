@@ -1,5 +1,5 @@
 ---
-title: "3. 网络基础：如何正确访问互联网"
+title: "网络基础：如何正确访问互联网"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/webweb.jpg"
 pubDate: 2025-08-08
