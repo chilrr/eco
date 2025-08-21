@@ -204,9 +204,9 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"trade copy copy copy.md": {
-	id: "trade copy copy copy.md";
-  slug: "trade-copy-copy-copy";
+"texchangebitget.md": {
+	id: "texchangebitget.md";
+  slug: "texchangebitget";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
