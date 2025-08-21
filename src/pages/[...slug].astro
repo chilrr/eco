@@ -64,11 +64,12 @@ const currentCategory = post.data.category || '其他';
                 <span class="category-count">({posts.length})</span>
               </div>
               <div class={`category-posts ${category === currentCategory ? 'expanded' : 'collapsed'}`}>
-                {posts.map(p => (
+                {posts.map((p, index) => (
                   <a 
                     href={`/${p.slug}`} 
                     class={`nav-item ${p.slug === post.slug ? 'active' : ''}`}
                   >
+                    <span class="step-number">{index + 1}</span>
                     <div class="nav-title">{p.data.title}</div>
                   </a>
                 ))}
@@ -343,6 +344,9 @@ const currentCategory = post.data.category || '其他';
   .nav-item {
     display: block;
     padding: 0.4rem 0.75rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
     border-radius: 0;
     text-decoration: none;
     color: var(--text-secondary);
@@ -365,7 +369,34 @@ const currentCategory = post.data.category || '其他';
     font-weight: 500;
   }
 
+  .step-number {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--text-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 0.1rem;
+    transition: all 0.2s ease;
+  }
+
+  .nav-item:hover .step-number {
+    background: rgba(0, 0, 0, 0.15);
+    color: var(--text-primary);
+  }
+
+  .nav-item.active .step-number {
+    background: #888888;
+    color: white;
+  }
+
   .nav-title {
+    flex: 1;
     font-weight: 400;
     font-size: 0.8rem;
     line-height: 1.2;
