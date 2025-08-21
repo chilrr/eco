@@ -1,7 +1,7 @@
 ---
 title: "交易基础：现货交易入门操作"
 description: "Sustainable fashion choices for a greener wardrobe."
-image: "/images/fashion.jpg"
+image: "/images/xianhuo.jpg"
 pubDate: 2025-08-04
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "市场交易"
