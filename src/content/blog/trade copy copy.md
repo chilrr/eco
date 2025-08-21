@@ -1,5 +1,5 @@
 ---
-title: "3. 交易所福利：领取Bybit高佣奖励"
+title: "交易所福利：领取Bybit高佣奖励"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/Exchangebybit.jpg"
 pubDate: 2025-08-02
