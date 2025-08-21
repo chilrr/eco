@@ -1,5 +1,5 @@
 ---
-title: "1.入场门票：如何快速购买加密货币"
+title: "入场门票：如何快速购买加密货币"
 description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/Exchangeusdt.jpg"
 pubDate: 2025-08-02
