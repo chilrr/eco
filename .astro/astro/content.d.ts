@@ -218,16 +218,16 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"trade.md": {
-	id: "trade.md";
-  slug: "trade";
+"tradeheyue.md": {
+	id: "tradeheyue.md";
+  slug: "tradeheyue";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"tradeheyue.md": {
-	id: "tradeheyue.md";
-  slug: "tradeheyue";
+"tradexianhuo.md": {
+	id: "tradexianhuo.md";
+  slug: "tradexianhuo";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
