@@ -148,9 +148,9 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"buy.md": {
-	id: "buy.md";
-  slug: "buy";
+"buycoin.md": {
+	id: "buycoin.md";
+  slug: "buycoin";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
