@@ -1,5 +1,5 @@
 ---
-title: "2.交易所入门：注册安装使用币安"
+title: "2.买卖代笔：注册安装使用币安"
 description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/binancecover.jpg"
 pubDate: 2025-08-01
