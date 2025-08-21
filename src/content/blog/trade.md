@@ -1,5 +1,5 @@
 ---
-title: "1. 交易基础：现货交易入门操作"
+title: "交易基础：现货交易入门操作"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/fashion.jpg"
 pubDate: 2025-08-04
