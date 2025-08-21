@@ -1,7 +1,7 @@
 ---
 title: "手机号码：线上获取境外电话卡"
 description: "Transform your kitchen into a zero-waste zone with these practical tips."
-image: "/images/kitchen.jpg"
+image: "/images/esim.jpg"
 pubDate: 2024-01-15
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "基础必备"
