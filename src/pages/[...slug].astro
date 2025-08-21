@@ -87,34 +87,7 @@ const currentCategory = post.data.category || '其他';
         <img src={post.data.image} alt={post.data.title} />
       </div>
       <div class="content">
-        <div class="article-meta">
-          <div class="article-tags">
-            {post.data.tags.map(tag => (
-              <a href={`/tags/${tag}`} class="tag-link">#{tag}</a>
-            ))}
-          </div>
-          <div class="article-category">
-            <span class="category-label">{post.data.category}</span>
-          </div>
-        </div>
         <Content />
-        <div class="article-footer">
-          <div class="related-articles">
-            <h3>相关文章</h3>
-            <div class="related-links">
-              {sortedPosts
-                .filter(p => p.slug !== post.slug && 
-                  (p.data.category === post.data.category || 
-                   p.data.tags.some(tag => post.data.tags.includes(tag))))
-                .slice(0, 3)
-                .map(relatedPost => (
-                  <a href={`/${relatedPost.slug}`} class="related-link">
-                    {relatedPost.data.title}
-                  </a>
-                ))}
-            </div>
-          </div>
-        </div>
       </div>
     </article>
   </div>
@@ -487,77 +460,6 @@ const currentCategory = post.data.category || '其他';
     color: var(--text-secondary);
   }
 
-  .article-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .article-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .tag-link {
-    padding: 0.3rem 0.8rem;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 15px;
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    transition: all 0.2s ease;
-  }
-
-  .tag-link:hover {
-    background: var(--text-primary);
-    color: white;
-  }
-
-  .category-label {
-    padding: 0.4rem 1rem;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: var(--text-primary);
-    font-weight: 500;
-  }
-
-  .article-footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e0e0e0;
-  }
-
-  .related-articles h3 {
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-  }
-
-  .related-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .related-link {
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.02);
-    border-radius: 6px;
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: all 0.2s ease;
-    border-left: 3px solid transparent;
-  }
-
-  .related-link:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-left-color: var(--text-primary);
-  }
-
   @media (max-width: 1024px) {
     .mobile-menu-toggle {
       display: block;
@@ -593,12 +495,6 @@ const currentCategory = post.data.category || '其他';
     
     body.sidebar-active {
       overflow: hidden;
-    }
-
-    .article-meta {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
     }
   }
 </style>
