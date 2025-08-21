@@ -176,6 +176,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"memecoin.md": {
+	id: "memecoin.md";
+  slug: "memecoin";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "paspport.md": {
 	id: "paspport.md";
   slug: "paspport";
@@ -193,13 +200,6 @@ declare module 'astro:content' {
 "sustainable-living.md": {
 	id: "sustainable-living.md";
   slug: "sustainable-living";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"trade copy copy copy copy.md": {
-	id: "trade copy copy copy copy.md";
-  slug: "trade-copy-copy-copy-copy";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
