@@ -1,5 +1,5 @@
 ---
-title: "6. 外区账号：美区港区苹果谷歌注册"
+title: "外区账号：美区港区苹果谷歌注册"
 description: "Transform your kitchen into a zero-waste zone with these practical tips."
 image: "/images/kitchen.jpg"
 pubDate: 2024-01-13
