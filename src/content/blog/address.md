@@ -1,5 +1,5 @@
 ---
-title: "2. 身份验证：获取个人地址证明"
+title: "身份验证：获取个人地址证明"
 description: "Sustainable fashion choices for a greener wardrobe."
 image: "/images/estate.jpg"
 pubDate: 2025-08-09
