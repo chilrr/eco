@@ -1,5 +1,5 @@
 ---
-title: "1.如何快速购买加密货币"
+title: "2.交易所入门：如何注册使用币安"
 description: "Guide to implementing renewable energy solutions in your home."
 image: "/images/binancecover.jpg"
 pubDate: 2025-08-01
