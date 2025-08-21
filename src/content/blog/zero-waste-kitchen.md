@@ -1,7 +1,7 @@
 ---
 title: "空投基础：如何发现和参与空投项目"
 description: "Transform your kitchen into a zero-waste zone with these practical tips."
-image: "/images/kitchen.jpg"
+image: "/images/airdrop.jpg"
 pubDate: 2024-01-15
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "空投撸毛"
