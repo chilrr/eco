@@ -239,14 +239,12 @@ const currentCategory = post.data.category || '其他';
     left: 1rem;
     top: 0;
     bottom: 0;
-    width: 1px;
+    width: 2px;
     background: linear-gradient(180deg, 
       transparent 0%, 
-      #c8c8c8 10%, 
-      #a8a8a8 30%, 
-      #888888 50%, 
-      #a8a8a8 70%, 
-      #c8c8c8 90%, 
+      #d0d0d0 5%, 
+      #a0a0a0 50%, 
+      #d0d0d0 95%, 
       transparent 100%
     );
     z-index: 0;
@@ -260,21 +258,12 @@ const currentCategory = post.data.category || '其他';
   }
 
   .category-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     position: relative;
   }
 
-  .category-group:last-child .category-connector {
-    display: none;
-  }
-
-  .category-connector {
-    position: absolute;
-    left: 0.9rem;
-    bottom: -1.5rem;
-    width: 1px;
-    height: 1.5rem;
-    background: linear-gradient(180deg, #a8a8a8 0%, transparent 100%);
+  .category-group:last-child {
+    margin-bottom: 0;
   }
 
   .category-header {
@@ -297,13 +286,14 @@ const currentCategory = post.data.category || '其他';
     left: -0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
-    background: #d8d8d8;
+    width: 8px;
+    height: 8px;
+    background: #e8e8e8;
     border-radius: 50%;
-    border: 1px solid #f0f0f0;
+    border: 2px solid #ffffff;
     transition: all 0.3s ease;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 2;
   }
 
   .category-header:hover {
@@ -312,9 +302,9 @@ const currentCategory = post.data.category || '其他';
   }
 
   .category-header:hover::before {
-    background: #999999;
+    background: #b8b8b8;
     transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
 
   .category-header.expanded {
@@ -324,9 +314,9 @@ const currentCategory = post.data.category || '其他';
   }
 
   .category-header.expanded::before {
-    background: #666666;
+    background: #888888;
     transform: translateY(-50%) scale(1.2);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
   .category-icon {
@@ -356,11 +346,11 @@ const currentCategory = post.data.category || '其他';
   }
 
   .category-posts {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     margin-left: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.2rem;
     overflow: hidden;
     transition: all 0.3s ease;
   }
