@@ -169,16 +169,16 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"exchange.md": {
-	id: "exchange.md";
-  slug: "exchange";
+"exchangebitget.md": {
+	id: "exchangebitget.md";
+  slug: "exchangebitget";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"exchangebitget.md": {
-	id: "exchangebitget.md";
-  slug: "exchangebitget";
+"exchangebybit.md": {
+	id: "exchangebybit.md";
+  slug: "exchangebybit";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
