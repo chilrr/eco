@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"buycoin copy.md": {
+	id: "buycoin copy.md";
+  slug: "buycoin-copy";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "buycoin.md": {
 	id: "buycoin.md";
   slug: "buycoin";
