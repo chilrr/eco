@@ -1,5 +1,5 @@
 ---
-title: "1. 全球布局：海外银行账户开设指南"
+title: "全球布局：海外银行账户开设指南"
 description: "Learn how to open overseas bank accounts for global crypto operations."
 image: "/images/sustainable.jpg"
 pubDate: 2024-01-10
