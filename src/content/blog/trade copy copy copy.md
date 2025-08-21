@@ -1,7 +1,7 @@
 ---
 title: "4. 交易所福利：领取Bitget高佣奖励"
 description: "Sustainable fashion choices for a greener wardrobe."
-image: "/images/fashion.jpg"
+image: "/images/Exchangebitget.jpg"
 pubDate: 2025-08-01
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "市场交易"
