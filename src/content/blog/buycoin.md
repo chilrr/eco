@@ -35,7 +35,5 @@ Making the switch to renewable energy is easier than you think.
 ```
 
 
-### 带标题
-```markdown
 ![币安注册界面](/images/posts/buycoin-01.jpg "点击注册按钮")
-```
+
