@@ -28,3 +28,13 @@ Making the switch to renewable energy is easier than you think.
   rounded="full"
 />
 这里是正文内容，图片会浮动在右侧...
+
+
+
+<ImageOptimizer 
+  src="/images/posts/step-01.jpg"
+  alt="操作步骤1"
+  size="md"
+  shadow="lg"
+  caption="第一步：打开应用"
+/>
