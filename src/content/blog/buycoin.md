@@ -22,8 +22,7 @@ Making the switch to renewable energy is easier than you think.
 
 
 
-### 使用组件（推荐）
-```markdown
+
 <ImageOptimizer 
   src="/images/posts/bn1.png"
   alt="币安注册界面"
@@ -31,8 +30,8 @@ Making the switch to renewable energy is easier than you think.
   type="phone"
   size="medium"
   caption="在币安首页点击注册按钮"
-/>
-```
+
+
 
 
 ![币安注册界面](/images/posts/bn1.png "点击注册按钮")
