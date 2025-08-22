@@ -9,6 +9,16 @@ category: "加密入门"
 
 # 币安注册1
 本篇展示如何从零开始注册下载登陆币安，立即开启区块链大门，畅享加密货币世界。  
+
+<ImageOptimizer 
+  src="/images/posts/bn1.png"
+  alt="币安注册界面"
+  type="phone"
+  size="md"
+  align="center"
+  caption="币安注册第一步界面"
+/>
+
 ## 重点准备
 
 1. 香港区appstore 苹果账号
@@ -18,23 +28,15 @@ category: "加密入门"
 
 Making the switch to renewable energy is easier than you think.
 
-
+## 注册步骤详解
 
 <ImageOptimizer 
   src="/images/posts/bn1.png"
-  alt="提示图标"
-  size="xs"
-  float="right"
-  rounded="full"
-/>
-这里是正文内容，图片会浮动在右侧...
-
-
-
-<ImageOptimizer 
-  src="/images/posts/step-01.jpg"
-  alt="操作步骤1"
-  size="md"
+  alt="币安注册步骤"
+  size="lg"
+  align="center"
   shadow="lg"
-  caption="第一步：打开应用"
+  caption="详细的注册流程界面"
 />
+
+按照上图所示，完成注册流程即可开始您的加密货币之旅。
