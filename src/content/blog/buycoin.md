@@ -9,8 +9,6 @@ category: "加密入门"
 
 import ImageOptimizer from '../../components/ImageOptimizer.astro';
 
-import ImageOptimizer from '../../components/ImageOptimizer.astro';
-
 # 币安注册完整教程
 
 本篇将手把手教你从零开始注册币安账户，这是进入加密货币世界的第一步，也是最重要的一步。
