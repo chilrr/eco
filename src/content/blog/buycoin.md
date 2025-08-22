@@ -28,7 +28,7 @@ Making the switch to renewable energy is easier than you think.
 
 
 <ImageOptimizer 
-  src="/images/posts/tip-icon.jpg"
+  src="/images/posts/bn1.png"
   alt="提示图标"
   size="xs"
   float="right"
