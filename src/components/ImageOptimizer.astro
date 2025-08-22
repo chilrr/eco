@@ -8,7 +8,12 @@ interface Props {
   height?: number;
   loading?: 'lazy' | 'eager';
   type?: 'normal' | 'phone';
-  size?: 'small' | 'medium' | 'large';
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+  align?: 'left' | 'center' | 'right';
+  float?: 'left' | 'right' | 'none';
+  border?: boolean;
+  shadow?: 'none' | 'sm' | 'md' | 'lg';
+  rounded?: 'none' | 'sm' | 'md' | 'lg' | 'full';
 }
 
 const { 
@@ -20,15 +25,17 @@ const {
   height, 
   loading = 'lazy',
   type = 'normal',
-  size = 'medium'
+  size = 'md',
+  align = 'center',
+  float = 'none',
+  border = false,
+  shadow = 'md',
+  rounded = 'md'
 } = Astro.props;
-
-// 检查是否为本地图片
-const isLocalImage = src.startsWith('/images/');
 ---
 
 {type === 'phone' ? (
-  <div class={`phone-mockup ${size}`}>
+  <div class={`phone-mockup phone-${size} align-${align} float-${float}`}>
     <div class="phone-container">
       <img 
         src={src}
@@ -43,7 +50,7 @@ const isLocalImage = src.startsWith('/images/');
     {caption && <p class="phone-caption">{caption}</p>}
   </div>
 ) : (
-  <div class="image-container">
+  <div class={`image-wrapper align-${align} float-${float}`}>
     <img 
       src={src}
       alt={alt}
@@ -51,31 +58,126 @@ const isLocalImage = src.startsWith('/images/');
       width={width}
       height={height}
       loading={loading}
-      class="optimized-image"
+      class={`optimized-image size-${size} ${border ? 'with-border' : ''} shadow-${shadow} rounded-${rounded}`}
     />
-    {caption && <figcaption>{caption}</figcaption>}
+    {caption && <figcaption class="image-caption">{caption}</figcaption>}
   </div>
 )}
 
 <style>
-  /* 手机样式 */
+  /* 对齐方式 */
+  .align-left {
+    text-align: left;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+
+  /* 浮动布局 */
+  .float-left {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+    clear: left;
+  }
+  
+  .float-right {
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+    clear: right;
+  }
+  
+  .float-none {
+    float: none;
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  /* 图片包装器 */
+  .image-wrapper {
+    margin: 1.5rem 0;
+    line-height: 0;
+  }
+
+  .image-wrapper.float-left,
+  .image-wrapper.float-right {
+    margin-top: 0.5rem;
+  }
+
+  /* 普通图片尺寸 */
+  .optimized-image {
+    height: auto;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .size-xs { max-width: 200px; }
+  .size-sm { max-width: 300px; }
+  .size-md { max-width: 500px; }
+  .size-lg { max-width: 700px; }
+  .size-xl { max-width: 900px; }
+  .size-full { max-width: 100%; }
+
+  /* 边框样式 */
+  .with-border {
+    border: 2px solid #e5e7eb;
+  }
+
+  /* 阴影效果 */
+  .shadow-none { box-shadow: none; }
+  .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+  .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+  .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+
+  /* 圆角样式 */
+  .rounded-none { border-radius: 0; }
+  .rounded-sm { border-radius: 0.125rem; }
+  .rounded-md { border-radius: 0.375rem; }
+  .rounded-lg { border-radius: 0.5rem; }
+  .rounded-full { border-radius: 9999px; }
+
+  /* 悬停效果 */
+  .optimized-image:hover {
+    transform: scale(1.02);
+  }
+
+  .float-left .optimized-image:hover,
+  .float-right .optimized-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* 图片说明 */
+  .image-caption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .float-left .image-caption,
+  .float-right .image-caption {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  /* 手机样式尺寸 */
   .phone-mockup {
     margin: 2rem auto;
-    text-align: center;
-    max-width: 100%;
+    line-height: 0;
   }
 
-  .phone-mockup.small {
-    max-width: 280px;
-  }
-
-  .phone-mockup.medium {
-    max-width: 350px;
-  }
-
-  .phone-mockup.large {
-    max-width: 420px;
-  }
+  .phone-xs { max-width: 200px; }
+  .phone-sm { max-width: 280px; }
+  .phone-md { max-width: 350px; }
+  .phone-lg { max-width: 420px; }
+  .phone-xl { max-width: 500px; }
+  .phone-full { max-width: 100%; }
 
   .phone-container {
     position: relative;
@@ -114,86 +216,51 @@ const isLocalImage = src.startsWith('/images/');
     color: var(--text-secondary);
     font-style: italic;
     line-height: 1.4;
-  }
-
-  /* 普通图片样式 */
-  <img 
-    src={src}
-    alt={alt}
-    title={title}
-    width={width}
-    height={height}
-    loading={loading}
-    class="optimized-image"
-  />
-  {title && <figcaption>{title}</figcaption>}
-</div>
-
-<style>
-  .image-container {
-    margin: 1.5rem 0;
     text-align: center;
-  }
-
-  .optimized-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .optimized-image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  }
-
-  figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-style: italic;
   }
 
   /* 响应式设计 */
   @media (max-width: 768px) {
-    .phone-mockup {
-      margin: 1.5rem auto;
+    .float-left,
+    .float-right {
+      float: none !important;
+      margin: 1rem auto !important;
+      text-align: center;
     }
     
-    .phone-mockup.small {
-      max-width: 240px;
-    }
+    .size-xs { max-width: 180px; }
+    .size-sm { max-width: 250px; }
+    .size-md { max-width: 320px; }
+    .size-lg { max-width: 100%; }
+    .size-xl { max-width: 100%; }
+    
+    .phone-xs { max-width: 180px; }
+    .phone-sm { max-width: 240px; }
+    .phone-md { max-width: 300px; }
+    .phone-lg { max-width: 350px; }
+    .phone-xl { max-width: 100%; }
 
-    .phone-mockup.medium {
-      max-width: 300px;
-    }
-
-    .phone-mockup.large {
-      max-width: 350px;
-    }
-
+    .optimized-image:hover,
     .phone-container:hover {
-      transform: none;
-      box-shadow: 
-        0 8px 30px rgba(0, 0, 0, 0.12),
-        0 4px 15px rgba(0, 0, 0, 0.08);
-    }
-
-    .optimized-image {
-      border-radius: 4px;
-    }
-    
-    .optimized-image:hover {
       transform: none;
     }
   }
 
   @media (max-width: 480px) {
-    .phone-mockup.small,
-    .phone-mockup.medium,
-    .phone-mockup.large {
-      max-width: 280px;
-    }
+    .size-xs,
+    .size-sm,
+    .size-md { max-width: 100%; }
+    
+    .phone-xs,
+    .phone-sm,
+    .phone-md,
+    .phone-lg { max-width: 280px; }
+  }
+
+  /* 清除浮动 */
+  .image-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 </style>
