@@ -182,32 +182,28 @@ const {
   .phone-container {
     position: relative;
     display: inline-block;
-    border-radius: 25px;
-    box-shadow: 
-      0 8px 30px rgba(0, 0, 0, 0.12),
-      0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
-    padding: 4px;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+    background: transparent;
+    padding: 0;
   }
 
   .phone-container:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 
-      0 15px 40px rgba(0, 0, 0, 0.15),
-      0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: none;
+    box-shadow: none;
   }
 
   .phone-image {
     width: 100%;
     height: auto;
-    border-radius: 21px;
+    border-radius: 0;
     display: block;
-    transition: filter 0.3s ease;
+    transition: none;
   }
 
   .phone-container:hover .phone-image {
-    filter: brightness(1.05);
+    filter: none;
   }
 
   .phone-caption {
