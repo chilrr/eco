@@ -28,3 +28,11 @@ Making the switch to renewable energy is easier than you think.
 ![币安注册界面](/images/posts/bn1.png "点击注册按钮")
 
 
+<ImageOptimizer 
+  src="/images/posts/tip-icon.jpg"
+  alt="提示图标"
+  size="xs"
+  float="right"
+  rounded="full"
+/>
+这里是正文内容，图片会浮动在右侧...
