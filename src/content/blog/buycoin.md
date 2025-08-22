@@ -17,3 +17,19 @@ category: "加密入门"
 4. Natural lighting solutions
 
 Making the switch to renewable energy is easier than you think.
+
+
+
+
+
+### 使用组件（推荐）
+```markdown
+<ImageOptimizer 
+  src="/images/posts/buycoin-01.jpg"
+  alt="币安注册界面"
+  title="第一步：点击注册按钮"
+  type="phone"
+  size="medium"
+  caption="在币安首页点击注册按钮"
+/>
+```
