@@ -111,7 +111,7 @@ const {
   /* 普通图片尺寸 */
   .optimized-image {
     height: auto;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     display: inline-block;
   }
 
@@ -140,14 +140,14 @@ const {
   .rounded-lg { border-radius: 0.5rem; }
   .rounded-full { border-radius: 9999px; }
 
-  /* 悬停效果 */
+  /* 悬停放大效果（无阴影） */
   .optimized-image:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
 
   .float-left .optimized-image:hover,
   .float-right .optimized-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
 
   /* 图片说明 */
@@ -184,13 +184,13 @@ const {
     display: inline-block;
     border-radius: 0;
     box-shadow: none;
-    transition: none;
+    transition: transform 0.3s ease;
     background: transparent;
     padding: 0;
   }
 
   .phone-container:hover {
-    transform: none;
+    transform: scale(1.05);
     box-shadow: none;
   }
 
@@ -199,7 +199,7 @@ const {
     height: auto;
     border-radius: 0;
     display: block;
-    transition: none;
+    transition: transform 0.3s ease;
   }
 
   .phone-container:hover .phone-image {
@@ -251,6 +251,12 @@ const {
     .phone-sm,
     .phone-md,
     .phone-lg { max-width: 280px; }
+
+    /* 移动端禁用悬停效果 */
+    .optimized-image:hover,
+    .phone-container:hover {
+      transform: none;
+    }
   }
 
   /* 清除浮动 */
