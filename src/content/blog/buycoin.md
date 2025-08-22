@@ -30,7 +30,7 @@ Making the switch to renewable energy is easier than you think.
   type="phone"
   size="medium"
   caption="在币安首页点击注册按钮"
-
+/>
 
 
 
