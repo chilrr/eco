@@ -9,6 +9,8 @@ category: "加密入门"
 
 import ImageOptimizer from '../../components/ImageOptimizer.astro';
 
+import ImageOptimizer from '../../components/ImageOptimizer.astro';
+
 # 币安注册完整教程
 
 本篇将手把手教你从零开始注册币安账户，这是进入加密货币世界的第一步，也是最重要的一步。
@@ -36,6 +38,12 @@ import ImageOptimizer from '../../components/ImageOptimizer.astro';
   size="md"
   caption="在应用商店搜索 Binance 下载官方App"
 />
+  src="/images/posts/bn1.png"
+  alt="币安App下载页面"
+  type="phone"
+  size="md"
+  caption="在应用商店搜索 Binance 下载官方App"
+/>
 
 ### 下载方式
 1. **iOS 用户**：使用香港区 Apple ID 在 App Store 搜索"Binance"
@@ -50,6 +58,12 @@ import ImageOptimizer from '../../components/ImageOptimizer.astro';
 打开币安App后，点击右下角"注册"按钮开始注册流程。
 
 <ImageOptimizer 
+  src="/images/posts/bn1.png"
+  alt="币安注册界面"
+  type="phone"
+  size="md"
+  caption="点击注册按钮开始创建账户"
+/>
   src="/images/posts/bn1.png"
   alt="币安注册界面"
   type="phone"
@@ -108,6 +122,12 @@ import ImageOptimizer from '../../components/ImageOptimizer.astro';
    - 提高交易限额
 
 <ImageOptimizer 
+  src="/images/posts/bn1.png"
+  alt="身份认证界面"
+  type="phone"
+  size="md"
+  caption="完成身份认证提升账户安全等级"
+/>
   src="/images/posts/bn1.png"
   alt="身份认证界面"
   type="phone"
