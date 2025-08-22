@@ -7,19 +7,10 @@ tags: ["energy", "home", "sustainability"]
 category: "加密入门"
 ---
 
-import ImageOptimizer from '../../components/ImageOptimizer.astro';
-
 # 币安注册1
 本篇展示如何从零开始注册下载登陆币安，立即开启区块链大门，畅享加密货币世界。  
 
-<ImageOptimizer 
-  src="/images/posts/bn1.png"
-  alt="币安注册界面"
-  type="phone"
-  size="md"
-  align="center"
-  caption="币安注册第一步界面"
-/>
+![币安注册界面](/images/posts/bn1.png)
 
 ## 重点准备
 
@@ -32,13 +23,6 @@ Making the switch to renewable energy is easier than you think.
 
 ## 注册步骤详解
 
-<ImageOptimizer 
-  src="/images/posts/bn1.png"
-  alt="币安注册步骤"
-  size="lg"
-  align="center"
-  shadow="lg"
-  caption="详细的注册流程界面"
-/>
+![币安注册步骤](/images/posts/bn1.png)
 
 按照上图所示，完成注册流程即可开始您的加密货币之旅。
