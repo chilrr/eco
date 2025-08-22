@@ -7,6 +7,8 @@ tags: ["energy", "home", "sustainability"]
 category: "加密入门"
 ---
 
+import ImageOptimizer from '../../components/ImageOptimizer.astro';
+
 # 币安注册1
 本篇展示如何从零开始注册下载登陆币安，立即开启区块链大门，畅享加密货币世界。  
 
