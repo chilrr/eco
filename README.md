@@ -1,19 +1,19 @@
-# Low Power Blog
-![Low Power](public/LowPower.png)
-A minimalist blog template focused on energy efficiency and low-power computing. Built with Astro and designed to be lightweight and performant.
+# 加密说明书
+![加密说明书](public/LowPower.png)
+加密货币实操手册 - 从入门到精通的完整指南。基于 Astro 构建，轻量快速。
 
-![Low Power](public/LowPower3.png)
-![Low Power](public/LowPower2.png)
+![加密说明书](public/LowPower3.png)
+![加密说明书](public/LowPower2.png)
 
 ## Features
 
-- Minimalist monochrome design
-- Lightweight and fast loading
-- Content collections for blog posts and pages
-- Tag system for content organization
-- Responsive grid layout
-- Energy-efficient grayscale images
-- Used astro-imagetools
+- 简洁的单色设计
+- 轻量快速加载
+- 内容集合管理博客文章和页面
+- 标签系统组织内容
+- 响应式网格布局
+- 高效的图片处理
+- 使用 astro-imagetools
 
 ## Getting Started
 
@@ -26,9 +26,9 @@ npm run preview
 
 ## Content Structure
 
-- `/src/content/blog/` - Blog posts
-- `/src/content/page/` - Static pages
-- `/public/images/` - Image assets
+- `/src/content/blog/` - 博客文章
+- `/src/content/page/` - 静态页面
+- `/public/images/` - 图片资源
 
 ## License
 

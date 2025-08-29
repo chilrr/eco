@@ -19,9 +19,9 @@ export async function getStaticPaths() {
 const { posts, tag } = Astro.props;
 ---
 
-<Layout title={`Posts tagged with "${tag}" - Eco Blog`}>
+<Layout title={`标签"${tag}"的文章 - 加密说明书`}>
 	<main>
-		<h1>Posts tagged with "{tag}"</h1>
+		<h1>标签"{tag}"的文章</h1>
 		<div class="blog-grid">
 			{posts.map(post => (
 				<a href={`/${post.slug}`} class="card-link">

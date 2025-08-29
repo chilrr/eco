@@ -10,9 +10,9 @@ const tagCounts = tags.reduce((acc, tag) => {
 }, {} as Record<string, number>);
 ---
 
-<Layout title="Tags - Eco Blog">
+<Layout title="标签 - 加密说明书">
 	<main>
-		<h1>Tags</h1>
+		<h1>标签</h1>
 		<div class="tags-grid">
 			{tags.map(tag => (
 				<a href={`/tags/${tag}`} class="tag">
