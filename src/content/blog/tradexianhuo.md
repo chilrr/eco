@@ -5,6 +5,7 @@ image: "/images/xianhuo.jpg"
 pubDate: 2025-08-04
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "市场交易"
+slug: "spot-trading-guide"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

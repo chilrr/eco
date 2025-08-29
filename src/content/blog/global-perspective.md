@@ -5,6 +5,7 @@ image: "/images/sustainable.jpg"
 pubDate: 2024-01-10
 tags: ["global", "banking", "international"]
 category: "全球视野"
+slug: "overseas-banking-guide"
 ---
 
 # 全球布局：海外银行账户开设指南

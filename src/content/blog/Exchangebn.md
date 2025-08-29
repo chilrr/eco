@@ -5,6 +5,7 @@ image: "/images/Exchangebinance.jpg"
 pubDate: 2025-08-01
 tags: ["energy", "home", "sustainability"]
 category: "加密入门"
+slug: "binance-exchange-guide"
 ---
 
 # 币安注册1

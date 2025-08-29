@@ -5,6 +5,7 @@ image: "/images/webweb.jpg"
 pubDate: 2025-08-08
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "基础必备"
+slug: "internet-access-guide"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

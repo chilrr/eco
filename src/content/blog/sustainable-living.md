@@ -5,6 +5,7 @@ image: "/images/wallet.jpg"
 pubDate: 2024-01-01
 tags: ["lifestyle", "sustainability", "eco-friendly"]
 category: "进阶安全"
+slug: "cold-wallet-security-guide"
 ---
 
 # Sustainable Living: A Guide to Eco-Friendly Choices

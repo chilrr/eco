@@ -5,6 +5,7 @@ image: "/images/passport.jpg"
 pubDate: 2025-08-10
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "基础必备"
+slug: "passport-application-guide"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

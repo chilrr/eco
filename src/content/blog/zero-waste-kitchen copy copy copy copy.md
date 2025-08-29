@@ -5,6 +5,7 @@ image: "/images/kitchen.jpg"
 pubDate: 2024-01-12
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "基础必备"
+slug: "account-maintenance-tips"
 ---
 
 # Zero Waste Kitchen: A Practical Guide

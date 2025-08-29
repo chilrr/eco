@@ -5,6 +5,7 @@ image: "/images/airdrop.jpg"
 pubDate: 2024-01-15
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "空投撸毛"
+slug: "airdrop-basics-guide"
 ---
 
 # Zero Waste Kitchen: A Practical Guide

@@ -5,6 +5,7 @@ image: "/images/securitymail.jpg"
 pubDate: 2024-01-14
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "基础必备"
+slug: "secure-email-guide"
 ---
 
 # Zero Waste Kitchen: A Practical Guide

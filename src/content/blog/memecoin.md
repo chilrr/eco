@@ -5,6 +5,7 @@ image: "/images/memecoin.png"
 pubDate: 2025-07-30
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "市场交易"
+slug: "memecoin-trading-guide"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

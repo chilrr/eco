@@ -5,6 +5,7 @@ image: "/images/heyue.jpg"
 pubDate: 2025-08-03
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "市场交易"
+slug: "futures-trading-basics"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience

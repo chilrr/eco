@@ -5,6 +5,7 @@ image: "/images/appaccount.jpg"
 pubDate: 2024-01-13
 tags: ["kitchen", "zero-waste", "home", "lifestyle"]
 category: "基础必备"
+slug: "overseas-app-accounts"
 ---
 
 # Zero Waste Kitchen: A Practical Guide

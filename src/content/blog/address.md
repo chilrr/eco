@@ -5,6 +5,7 @@ image: "/images/estate.jpg"
 pubDate: 2025-08-09
 tags: ["fashion", "sustainability", "lifestyle"]
 category: "基础必备"
+slug: "address-verification-guide"
 ---
 
 # Eco-Friendly Fashion: Style with Conscience
